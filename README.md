@@ -2,6 +2,10 @@
 
 ## Overview
 This project provides an automation script written in Python that allows users to log into the International Baccalaureate Organization (IBO) candidate portal and navigate to the results page automatically. The script utilizes the Selenium library to interact with the web browser.
+- [Go to Prerequisites](#prerequisites)
+- [Go to Installation](#installation)
+- [Go to Configuration](#configuration)
+- [Go to Usage](#usage)
 
 ## Prerequisites
 Before using this project, make sure you have the following:
