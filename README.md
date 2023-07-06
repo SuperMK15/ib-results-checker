@@ -9,7 +9,11 @@ Before using this project, make sure you have the following:
 - Chrome web browser installed.
 
 ## Installation
-1. Get the project either by downloading it and unzipping it to your preferred location, or cloning this GitHub repository.
+1. Get the project either by downloading it and unzipping it to your preferred location, or cloning this GitHub repository and navigating to the project directory with the bash commands below:
+```
+git clone https://github.com/SuperMK15/ib-results-checker.git/
+cd ib-results-checker
+```
 2. Open a terminal, ensure you are in the correct directory, and install the required Python dependencies by running:
 ```
 pip install -r requirements.txt
