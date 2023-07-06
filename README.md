@@ -24,7 +24,7 @@ To use the script, you need to configure your login information in the `config.t
 5. Ensure you save all your changes to the file.
 
 ## Usage
-To run the script, execute the command:
+To run the script, execute the following command in the terminal or simply run it using your IDE of choice:
 ```
 python main.py
 ```
