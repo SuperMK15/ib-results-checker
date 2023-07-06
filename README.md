@@ -9,15 +9,8 @@ Before using this project, make sure you have the following:
 - Chrome web browser installed.
 
 ## Installation
-1. Clone the GitHub repository to your local machine using the following command:
-```
-git clone https://github.com/your-username/ibo-results-automation.git
-```
-2. If not already in the project directory, navigate to it using:
-```
-cd ibo-results-automation
-```
-3. Install the required Python dependencies by running:
+1. Get the project either by downloading it and unzipping it to your preferred location, or cloning this GitHub repository.
+2. Open a terminal, ensure you are in the correct directory, and install the required Python dependencies by running:
 ```
 pip install -r requirements.txt
 ```
