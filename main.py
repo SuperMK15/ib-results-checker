@@ -21,31 +21,29 @@ try:
     config = read_config_file(file_path)
     personal_code = config.get('personal_code')
     pin = config.get('pin')
-    time_between_reloads = int(config.get('time_between_reloads'))
     url = "https://candidates.ibo.org/#/Login"
 except:
     print("Invalid config.txt")
     exit()
 
-while True:
-    driver = webdriver.Chrome()
-    driver.get(url)
+driver = webdriver.Chrome()
+driver.get(url)
 
-    driver.find_element(By.ID, "personCode").send_keys(personal_code)
-    driver.find_element(By.ID, "pinCode").send_keys(pin)
-    print("Entered login data successfully")
+driver.find_element(By.ID, "personCode").send_keys(personal_code)
+driver.find_element(By.ID, "pinCode").send_keys(pin)
+print("Entered login data successfully")
 
-    wait = WebDriverWait(driver, 10)
-    login_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ibo-btn-primary.login.mt-40")))
-    login_button.click()
-    print("Logged in successfully")
+wait = WebDriverWait(driver, 10)
+login_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ibo-btn-primary.login.mt-40")))
+login_button.click()
+print("Logged in successfully")
 
-    navigation_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ibo-btn-primary.mt-4")))
-    navigation_button.click()
-    print("Navigated to results successfully")
+navigation_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ibo-btn-primary.mt-4")))
+navigation_button.click()
+print("Navigated to results successfully")
 
-    wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-    print("Page has finished loading")
+wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+print("Page has finished loading")
 
-    time.sleep(time_between_reloads)
-    driver.quit()
+time.sleep(9999)
+driver.quit()
