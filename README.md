@@ -14,7 +14,7 @@ Before using this project, make sure you have the following:
 git clone https://github.com/SuperMK15/ib-results-checker.git/
 cd ib-results-checker
 ```
-2. Open a terminal, ensure you are in the correct directory, and install the required Python dependencies by running:
+2. Open a terminal if you haven't already in the project directory, and install the required Python dependencies by running:
 ```
 pip install -r requirements.txt
 ```
