@@ -25,9 +25,10 @@ pip install -r requirements.txt
 ## Configuration
 To use the script, you need to configure your login information in the `config.txt` file. Follow the steps below:
 1. Open the provided `config_template.txt` file.
-2. Replace `your_personal_code_here` with your IBO personal code and 'your_pin_here' with your PIN.
-3. Adjust the `time_between_reloads` value if desired. This value represents the time (in seconds) to wait before reloading the page and trying again.
-4. Rename the file to `config.txt` and save.
+2. Make a copy of it and name it `config.txt`. Make sure to save it in the same directory.
+3. Replace `your_personal_code_here` with your IBO personal code and 'your_pin_here' with your PIN.
+4. Adjust the `time_between_reloads` value if desired. This value represents the time (in seconds) to wait before reloading the page and trying again.
+5. Ensure you save all your changes to the file.
 
 ## Usage
 To run the script, execute the command:
