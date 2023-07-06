@@ -1,0 +1,3 @@
+personal_code: your_personal_code_here
+pin: your_pin_here
+time_between_reloads: 30

@@ -19,8 +19,8 @@ def read_config_file(file_path):
 try:
     file_path = 'config.txt'
     config = read_config_file(file_path)
-    username = config.get('username')
-    password = config.get('password')
+    personal_code = config.get('personal_code')
+    pin = config.get('pin')
     time_between_reloads = int(config.get('time_between_reloads'))
     url = "https://candidates.ibo.org/#/Login"
 except:
@@ -31,8 +31,8 @@ while True:
     driver = webdriver.Chrome()
     driver.get(url)
 
-    driver.find_element(By.ID, "personCode").send_keys(username)
-    driver.find_element(By.ID, "pinCode").send_keys(password)
+    driver.find_element(By.ID, "personCode").send_keys(personal_code)
+    driver.find_element(By.ID, "pinCode").send_keys(pin)
     print("Entered login data successfully")
 
     wait = WebDriverWait(driver, 10)
